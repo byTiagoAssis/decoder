@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoder</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/decoder.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <h1><img src="imagens/logo.gif"></h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="decoder.html">Decoder</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="infos">
+      <h2>Bem Vindo Ao Decoder!!</h2>
+      <h5>Para utilizar o Decoder tem algumas regras: </h5>
+      <ul>
+        <li>* Utilize apenas letras minúsculas</li>
+        <li>* Sem acentos ou caracteres especiais</li>
+      </ul>
+    </section>
+
+    <div class="conteudo-grid">
+      <textarea class="conteudo-input" name="texto" id="text" cols="30" rows="5" autofocus
+        placeholder="Digite o texto aqui"></textarea>
+      <div class="conteudo-buttons">
+        <span class="button1">Criptografar</span>
+        <span class="button2">Descriptografar</span>
+      </div>
+      <div class="conteudo-resposta ">
+        <p class="resposta revelar" id="button">Seu texto criptografado</p>
+        <span class="texto-copiado">Texto Copiado!</span>
+        <span class="conteudo-copiar">Copiar</span>
+      </div>
+      <div class="conteudo-buttons">
+        <button class="button3" onclick="revelar()">Revelar</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <img src="imagens/logo.gif">
+    <p class="copyright">&copy; BTA Tech!</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
